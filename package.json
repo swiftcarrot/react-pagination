@@ -1,0 +1,21 @@
+{
+  "name": "@swiftcarrot/react-pagination",
+  "version": "0.2.3",
+  "description": "React pagination component",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production rollup -c",
+    "test": "NODE_ENV=production jest --coverage",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Wang Zuo <wangzuo@swiftcarrot.com> (https://swiftcarrot.com)",
+  "license": "MIT"
+}
